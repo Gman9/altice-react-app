@@ -1,0 +1,214 @@
+@import '../assets/variables/palette';
+@import "../assets/variables/_fonts.scss";
+
+.brand{
+  vertical-align: middle;
+  position: relative;
+  padding: 200px 50px 50px;
+  margin-bottom: 180px;
+
+  &:after{
+    position: absolute;
+    content: '';
+    left: 0px;
+    right: 0px;
+    top: -50vh;
+    border-width: 25vh 50vw;
+    border-style: solid;
+    border-color: $mercury $mercury rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    transform: scale(1, -1);
+  }
+}
+
+.brand-rectangle{
+  display: inline-flex;
+  align-items: baseline;
+  .rectangle{
+    width: 6px;
+    height: 104px;
+    background: $dove-gray 0% 0% no-repeat padding-box;
+  }
+
+  p{
+    font-family: $font-roboto;
+    font-size: 2.0625rem;
+    letter-spacing: 0px;
+    color: $dove-gray;
+    margin-left: 16px;
+  }
+}
+
+.brand-title{
+  font-family: $font-roboto;
+  font-size: 5.625rem;
+  letter-spacing: 0px;
+  color: $black;
+  margin-top: 0px;
+}
+
+.brand-content{
+  position: relative;
+}
+
+.brand-content__img{
+  display: flex;
+  justify-content: center;
+  width: 450px;
+  height: 400px;
+  background: $white 0% 0% no-repeat padding-box;
+  position: relative;
+  left: 140px;
+
+  img{
+    width: 256px;
+    height: 400px;
+    background: transparent
+  }
+}
+
+.brand-content__text{
+  width: 457px;
+  text-align: left;
+  font-family: $font-roboto;
+  font-size: 1.75rem;
+  letter-spacing: 0px;
+  color: $dove-gray;
+  background: transparent;
+
+  &.bottom-right{
+    position: absolute;
+    bottom: -159px;
+    left: 518px;
+  }
+
+  p{
+    text-align: justify;
+  }
+
+  span{
+    background-color: yellowgreen;
+  }
+}
+
+.point:after {
+  content: '\2807';
+  font-size: 80px;
+}
+
+.brand-toggle{
+  margin: 130px 179px;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+
+.brand-links{
+  display: inline-flex;
+
+  .brand-links__manifesto{
+    margin-right: 20px;
+
+    .brand-links__manifesto-abs{
+      position: absolute;
+      background-color: $olive-drab;
+      color: $white;
+      text-align: left;
+      font-family: $font-roboto;
+      font-size: 24px;
+      letter-spacing: 0px;
+
+    .manifesto{
+      background-color: $olive-drab;
+      padding: 0 7px;
+      width: 197px;
+      height: 50px;
+      color: $white;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 30px;
+        background: $olive-drab;
+        transform: skew(-30deg);
+        transform-origin: bottom;
+      }
+
+      span{
+        position: absolute;
+        top: 20%;
+      }
+    }
+  }
+
+  }
+  .brand-links__salto{
+    margin-left: 230px;
+    .salto{
+      position: absolute;
+      background-color: $limeade;
+      padding: 0 7px;
+      width: 326px;
+      height: 50px;
+      color: $white;
+      text-align: left;
+      font-family: $font-roboto;
+      font-size: 24px;
+      letter-spacing: 0px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 30px;
+        background: $limeade;;
+        transform: skew(-30deg);
+        transform-origin: top;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 30px;
+        background: $limeade;;
+        transform: skew(-30deg);
+        transform-origin: bottom;
+      }
+
+      span{
+        position: absolute;
+        top: 20%;
+    }
+    }
+}
+}
+
+.circle{
+  width: 120px;
+  height: 120px;
+  border: 6px solid #FF9933;
+  background-color: transparent;
+  border-radius: 50%;
+  position: relative;
+  top: -60px;
+  left: 150px;
+}
+
+.circle-dashed{
+  width: 120px;
+  height: 120px;
+  border: 2px dashed #FF9933;
+  background-color: transparent;
+  border-radius: 50%;
+  position: relative;
+  top: -60px;
+  left: 150px;
+}

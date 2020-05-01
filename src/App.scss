@@ -1,0 +1,49 @@
+@import './assets/variables/palette';
+$app-header-height: 1100px;;
+
+.app {
+  text-align: center;
+  background: $mercury;
+}
+
+.pp-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: geometric-forms-spin infinite 20s linear;
+  }
+}
+
+.app-header {
+  background-color: $dove-gray;
+  background-image: url('./assets/images/padrao_branco.png');
+  min-height: $app-header-height;
+  background-position: center;
+  width: 100%;
+}
+
+.colors-forms{
+  display: inline-flex;
+  width: 100%;
+}
+
+@keyframes geometric-forms-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.big-frog-img{
+  width: 684px;
+  height: 500px;
+  position: relative;
+  top: 63px;
+  left: 210px;
+  z-index: 1;
+}

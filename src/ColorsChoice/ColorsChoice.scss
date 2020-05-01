@@ -1,0 +1,36 @@
+@import '../assets/variables/palette';
+
+.colors-choice{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin-top: 30%;
+}
+
+.square{
+  width: 117px;
+  height: 117px;
+  background-color: $white;
+  display: flex;
+  position: relative;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.square-frame{
+  width: 192px;
+  height: 192px;
+  background-color: transparent;
+  display: flex;
+  position: relative;
+  margin-right: 25px;
+  border: 2px solid;
+  top: -40px;
+
+  .square{
+    width: 163px;
+    height: 163px;
+    margin: 14px;
+  }
+}
