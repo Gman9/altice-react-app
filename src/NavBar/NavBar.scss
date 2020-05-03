@@ -1,0 +1,45 @@
+@import '../assets/variables/palette';
+@import "../assets/variables/_fonts.scss";
+
+.nav-bar{
+  height: 228px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-bar__logo{
+  width: 20%;
+  height: 100%;
+}
+
+.nav-bar__ul{
+  list-style-type: none;
+  display: inline-flex;
+
+  li{
+    margin-right: 66px;
+    align-self: center;
+    a{
+      font-family: $font-roboto;
+      font-size: 1.625rem;
+      color: $black;
+      text-decoration: none;
+      text-align: left;
+      letter-spacing: 0px;
+      opacity: 1;
+      cursor: pointer;
+      background-color: transparent;
+      border: transparent;
+
+      &.active,
+      &:focus,
+      &:hover{
+        text-decoration: none;
+        background-color: $black;
+        color: $white;
+      }
+    }
+  }
+
+}
