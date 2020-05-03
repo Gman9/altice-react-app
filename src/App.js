@@ -25,10 +25,11 @@ export const App = () => {
           <GeometricFormsHeader color={color}/>
         </section>
         <img className="big-frog-img" src={bigFrog} alt=""/>
-
       </header>
+
       <Brand color={color}/>
       <Jump color={color}/>
+
       <footer>
         <Contacts/>
       </footer>

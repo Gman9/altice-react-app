@@ -5,6 +5,7 @@ import logo from '../assets/images/logo.png'
 
 export const data = ['Lorem','Ipsum','Dolore']
 export const sections = ['header','brand','jump']
+
 export const NavBar= () => {
   const [activeItem, setActiveItem] = useState('Lorem');
   const handleOncClick = (activeName) =>  setActiveItem(activeName)
@@ -15,7 +16,8 @@ export const NavBar= () => {
       <ul id="nav-var-list" className="nav-bar__ul">
         {data.map((text, idx) =>
           <li key={`id-${text}`}>
-            <a href={`#${sections[idx]}`}
+            <a
+              href={`#${sections[idx]}`}
               className={activeItem === text ? 'active' : ''}
               onClick={() => handleOncClick(text)}
             >

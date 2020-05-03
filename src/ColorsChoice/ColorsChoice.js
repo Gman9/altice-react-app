@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './ColorsChoice.scss';
-//import '../GeometricForms/GeometricForms.scss';
 
 const Colors = {
   SHAMROCK: '#33CC99',

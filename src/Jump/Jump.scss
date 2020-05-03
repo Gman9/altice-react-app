@@ -91,7 +91,7 @@
     position: absolute;
     background-color: $limeade;
     padding: 0 7px;
-    margin-top: 78px;
+    margin-top: 48px;
     width: 197px;
     height: 55px;
     color: $white;
@@ -146,4 +146,10 @@
     left: 50px;
     transform: rotate(65deg);
   }
+}
+
+.jump__msg{
+  color: red;
+  text-align: justify;
+  margin-top: 20px;
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import './GeometricFormsHeader.scss';
 
-
 export const GeometricFormsHeader= (color) => {
 
   return (
